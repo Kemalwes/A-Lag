@@ -1794,8 +1794,9 @@ local Misc12 = Main2:Section{
 Misc12:Slider({
     Name = "FPS CAP",
     Text = "[value]/360",
-    Min = 60,
-    Max = 360,
+    Default = 500,
+    Min = 10,
+    Max = 1000,
     Float = 0.1,
     Flag = "fpscapvalue",
     Callback = function(n) 
@@ -2138,4 +2139,3 @@ Notification:Notify(
     {Title = "A-Lag Premium", Description = "Script Loaded In " .. tick() - t .. "s"},
     {OutlineColor = Color3.fromRGB(255, 255, 255), Time = 5, Type = "default"}
 )
-
